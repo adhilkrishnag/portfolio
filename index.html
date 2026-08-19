@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adhil Krishna G. | Software Engineer (Flutter / Dart)</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Adhil Krishna G. — Software Engineer building and optimizing cross-platform Flutter applications for complex production environments. Creator of pure-Dart dicom_viewer.">
+  <meta name="keywords" content="Adhil Krishna G, Software Engineer, Flutter, Dart, Clean Architecture, Performance Optimization, dicom_viewer, Healthcare Systems">
+  <meta name="author" content="Adhil Krishna G.">
+  <meta name="robots" content="index, follow">
+  
+  <!-- OpenGraph Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Adhil Krishna G. | Software Engineer">
+  <meta property="og:description" content="Software Engineer building and optimizing cross-platform Flutter applications for complex production environments. 4+ years experience across healthcare systems, architecture, performance, and open source.">
+  <meta property="og:url" content="https://adhilkrishnag.github.io/">
+  <link rel="canonical" href="https://adhilkrishnag.github.io/">
+  
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Adhil Krishna G.",
+    "jobTitle": "Software Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Glitz IT Solutions"
+    },
+    "url": "https://github.com/adhilkrishnag",
+    "sameAs": [
+      "https://github.com/adhilkrishnag",
+      "https://www.linkedin.com/in/adhilkrishnag/",
+      "https://pub.dev/packages/dicom_viewer"
+    ],
+    "knowsAbout": [
+      "Flutter",
+      "Dart",
+      "Clean Architecture",
+      "MVVM",
+      "Performance Optimization",
+      "DICOM",
+      "Healthcare Systems"
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/animations.css">
+
+  <!-- Immediate Theme Guard Script to Prevent FOUC -->
+  <script>
+    (function() {
+      try {
+        const storedTheme = localStorage.getItem("adhil_portfolio_theme");
+        if (storedTheme === "light") {
+          document.documentElement.setAttribute("data-theme", "light");
+        } else {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-brand">
+        <span class="nav-brand-dot"></span>
+        <span>Adhil Krishna G.</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#opensource" class="nav-link">Open Source</a></li>
+          <li><a href="#engineering" class="nav-link">Engineering</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <svg id="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="moon-icon" width="16" height="16" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#opensource" class="nav-link">Open Source</a>
+    <a href="#engineering" class="nav-link">Engineering</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- 1. Hero Overview -->
+    <section class="section hero-section" id="hero">
+      <div class="container" id="hero-container">
+        <!-- Rendered dynamically from data/profile.js & data/metrics.js -->
+      </div>
+    </section>
+
+    <!-- 2. Measured Engineering Outcomes -->
+    <section class="section" id="outcomes">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Production Track Record</span>
+          <h2 class="section-title">Measured Engineering Outcomes</h2>
+          <p class="section-description">Measured performance gains, operational outcomes, and production reliability delivered across hospital management and clinical applications.</p>
+        </div>
+        <div class="impact-table-grid" id="secondary-metrics-container">
+          <!-- Rendered dynamically from data/metrics.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Selected Projects & Case Studies -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Case Studies</span>
+          <h2 class="section-title">Selected Projects & Case Studies</h2>
+          <p class="section-description">Healthcare, regulatory policy, and messaging applications engineered with Clean Architecture, MVVM, and RESTful APIs.</p>
+        </div>
+        <div id="projects-container">
+          <!-- Rendered dynamically from data/projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Featured Open Source -->
+    <section class="section" id="opensource">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Open Source</span>
+          <h2 class="section-title">Medical Imaging Architecture</h2>
+          <p class="section-description">A pure-Dart medical imaging package for cross-platform Flutter applications without native binary dependencies.</p>
+        </div>
+        <div id="dicom-feature-container">
+          <!-- Rendered dynamically from data/openSource.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. How I Engineer -->
+    <section class="section" id="engineering">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Principles</span>
+          <h2 class="section-title">How I Engineer</h2>
+          <p class="section-description">Core principles governing architectural scalability, performance profiling, production debugging, and reliable feature delivery.</p>
+        </div>
+        <div id="principles-container">
+          <!-- Rendered dynamically from data/principles.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Experience Timeline -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Employment History</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-description">Demonstrated engineering ownership across production support, live debugging, software development, architecture, and open source.</p>
+        </div>
+        <div id="experience-timeline-container">
+          <!-- Rendered dynamically from data/experience.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Healthcare Engineering Domain -->
+    <section class="section" id="healthcare">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Domain Focus</span>
+          <h2 class="section-title">Healthcare & Production Systems Engineering</h2>
+          <p class="section-description">Handling hospital management workflows, DICOM medical imaging, automated clinical documentation, and high-availability operations.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-3" id="healthcare-domain-container">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Skills Taxonomy -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tooling & Foundations</span>
+          <h2 class="section-title">Skills Taxonomy</h2>
+          <p class="section-description">Organized by technical specialization based on professional experience.</p>
+        </div>
+        <div class="skills-taxonomy-grid" id="skills-container">
+          <!-- Rendered dynamically from data/skills.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Education, Training & Learning -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Background & Active Learning</span>
+          <h2 class="section-title">Education & Training</h2>
+        </div>
+        <div class="edu-exploring-grid" id="education-container">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Contact -->
+    <section class="section" id="contact">
+      <div class="container" id="contact-container">
+        <!-- Rendered dynamically from data/profile.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container flex justify-between items-center wrap gap-4">
+      <div>
+        <strong>Adhil Krishna G.</strong> — Software Engineer (Flutter / Dart)
+      </div>
+      <div class="flex gap-4">
+        <a href="https://github.com/adhilkrishnag" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/adhilkrishnag/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="https://pub.dev/packages/dicom_viewer" target="_blank" rel="noopener noreferrer">pub.dev ↗</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Application Bootstrap -->
+  <script type="module" src="scripts/app.js"></script>
+</body>
+</html>
