@@ -109,6 +109,7 @@ The website is a static, zero-dependency web application and can be deployed dir
 
 ## Links
 
+- **Portfolio**: [adhilkrishnag.github.io/portfolio](https://adhilkrishnag.github.io/portfolio/)
 - **GitHub Profile**: [github.com/adhilkrishnag](https://github.com/adhilkrishnag)
 - **LinkedIn Profile**: [linkedin.com/in/adhilkrishnag](https://www.linkedin.com/in/adhilkrishnag/)
 - **dicom_viewer on pub.dev**: [pub.dev/packages/dicom_viewer](https://pub.dev/packages/dicom_viewer)
